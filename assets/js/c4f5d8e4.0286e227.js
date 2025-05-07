@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunklongsight_docs=self.webpackChunklongsight_docs||[]).push([[634],{9179:(s,e,t)=>{t.r(e),t.d(e,{default:()=>o});var c=t(6540),n=t(6347);function o(){const s=(0,n.W6)();return(0,c.useEffect)((()=>{s.push("/docs/welcome-to-longsight")}),[s]),null}}}]);
