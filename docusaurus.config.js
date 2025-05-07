@@ -15,7 +15,7 @@ const config = {
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://DurianFarmer.github.io',
+  url: 'https://docs.longsightsheets.com',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
@@ -23,7 +23,9 @@ const config = {
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'DurianFarmer', // Usually your GitHub org/user name.
-  projectName: 'longsight_docs', // Usually your repo name.  
+  projectName: 'longsight_docs', // Usually your repo name.
+  deploymentBranch: 'gh-pages',
+  trailingSlash: false, // Prevents double slashes in URL
 
 
   onBrokenLinks: 'throw',
