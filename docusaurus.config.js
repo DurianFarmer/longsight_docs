@@ -60,8 +60,8 @@ const config = {
           },
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          // editUrl:
+          //   'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
           // Useful options to enforce blogging best practices
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
@@ -80,11 +80,12 @@ const config = {
       // Replace with your project's social card
       image: 'img/baner_v2.gif',
       navbar: {
-        title: 'Longsight docs',
+        title: 'Longsight',
         logo: {
           alt: 'My Site Logo',
           src: 'img/logo.png',
-          href: 'docs/welcome-to-longsight',
+          href: 'https://longsightsheets.com',
+          target: '_self',
         },
         items: [
           // {
