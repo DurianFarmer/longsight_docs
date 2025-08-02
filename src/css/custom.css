@@ -28,3 +28,14 @@
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+
+/* for dragged text */
+::selection {
+  background: #F1C232; /* 원하는 배경색 (예: 노란색) */
+  color: black;        /* 선택된 텍스트 색 */
+}
+/* for Firefox */
+::-moz-selection {
+  background: #F1C232;
+  color: black;
+}
