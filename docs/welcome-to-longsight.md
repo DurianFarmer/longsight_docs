@@ -19,7 +19,7 @@ sidebar_position: 1
 - Install the Longsight Add-on from the [Google Workspace Marketplace](https://workspace.google.com/marketplace/app/longsight/400612990894?flow_type=2).
   <p>
     <img 
-      src="/figs/install-longsight-mini.png" 
+      src="/figs/install-longsight-mini-2.png" 
       alt="install-longsight" 
       style={{ maxWidth: "60%", height: "auto" }} />
   </p>
@@ -38,15 +38,16 @@ sidebar_position: 1
       alt="create-templates" 
       style={{ maxWidth: "100%", height: "auto" }} />
   </p>
-- By selecting `All Templates`, you will get the following **Analysis Sheets**:
+- By selecting `All Templates`, you will get the following **Analysis Sheets** and **Stock List Sheets**.
+- **Analysis Sheets:**
   - [〖CAGR〗](/docs/Analysis/cagr.md): Assess long-term stock performance to estimate annualized returns. 
   - [〖Ratio〗](/docs/Analysis/ratio.md): Analyze financial ratios within a sector to identify potential undervalued stocks.
   - [〖Corr〗](/docs/Analysis/corr.md): Examine stock correlations to optimize portfolio diversification and risk management.
-- You'll aslo get these **[Stock List Sheets](/docs/stock-lists.md)**:
-  - 〖us〗: Identifiers for US equities, including Nasdaq, NYSE, and AMEX listings.
-  - 〖usETF〗: Identifiers for US-listed ETFs from Nasdaq, NYSE, and AMEX.
-  - 〖jp〗: Identifiers for Japanese equities listed on the Tokyo Stock Exchange (TSE).
-  - 〖jpETF〗: Identifiers for Japanese ETFs listed on the TSE.
+- **[Stock List Sheets](/docs/stock-lists.md)**:
+  - 〖us〗: *Stock identifiers* for US equities, including Nasdaq, NYSE, and AMEX listings.
+  - 〖usETF〗: *Stock identifiers* for US-listed ETFs from Nasdaq, NYSE, and AMEX.
+  - 〖jp〗: *Stock identifiers* for Japanese equities listed on the Tokyo Stock Exchange (TSE).
+  - 〖jpETF〗: *Stock identifiers* for Japanese ETFs listed on the TSE.
 
 ---
 
@@ -54,28 +55,36 @@ sidebar_position: 1
 - **Longsight** provides analysis for US and JP equities and ETFs.
 - Let's try running an analysis using the〖CAGR〗sheet.
 - Click `Extensions > Longsight > Run analysis` to open the **Longsight Sidebar**.
-- Sample *stock identifiers* are already filled in—so you can simply click <span style={{display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: '80px', height: '30px', padding: '4px', borderRadius: '8px', color: 'white', backgroundColor: '#274E13'}}>Run</span>. That’s it!
-  - The template sheets use *stock identifiers* in the format `(Ticker, Region, Name)`. 
-  - You'll see them listed in columns `A`, `B`, and `C` of each template.
+  <p>
+    <img 
+      src="/figs/run_analysis.png" 
+      alt="cagr" 
+      style={{ maxWidth: "100%", height: "auto" }} />
+  </p>
+- Sample *stock identifiers* are already filled in the〖CAGR〗sheet, so you can simply click the <span style={{display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: '80px', height: '30px', padding: '4px', borderRadius: '8px', color: 'white', backgroundColor: '#274E13'}}>Run</span> button from the **Longsight Sidebar**. That’s it!
   <p>
     <img 
       src="/figs/cagr_gif_2000.gif" 
       alt="cagr" 
       style={{ maxWidth: "100%", height: "auto" }} />
   </p>
-- To analyze different equities or ETFs, enter their *stock identifiers* into the <span style={{ border: '1px solid #D9D9D9', padding: '4px', color: 'black', backgroundColor: '#D9D9D9' }}>Gray</span> cells and click <span style={{display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: '80px', height: '30px', padding: '4px', borderRadius: '8px', color: 'white', backgroundColor: '#274E13'}}>Run</span>.
 - All Analysis Sheets work in the same way. For more details on each one, check out:
   - [〖CAGR〗](/docs/Analysis/cagr.md)
   - [〖Ratio〗](/docs/Analysis/ratio.md)
   - [〖Corr〗](/docs/Analysis/corr.md)
-- For how to fill or update **Stock List Sheets**, [check here](/docs/stock-lists.md).
+
+#### Stock Identifiers
+- The template sheets use *stock identifiers* in the format `(Ticker, Region, Name)`. 
+- You'll see them listed in columns `A`, `B`, and `C` of each template.
+- To analyze different equities or ETFs, copy their *stock indentifiers* from the **Stock List Sheets**, paste them into the <span style={{ border: '1px solid #D9D9D9', padding: '4px', color: 'black', backgroundColor: '#D9D9D9' }}>Gray</span> cells in an **Analysis Sheet**, and click <span style={{display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: '80px', height: '30px', padding: '4px', borderRadius: '8px', color: 'white', backgroundColor: '#274E13'}}>Run</span> in the **Longsight Sidebar**.
+- For how to fill or update the **Stock List Sheets**, [check here](/docs/stock-lists.md).
 ---
 
 ## Template Colors & Sidebar Buttons
 
 ### What the Cell Colors Mean
 - <span style={{ border: '1px solid #D9D9D9', padding: '4px', color: 'white', backgroundColor: '#274E13' }}>Dark Green</span>: Instruction area. Don’t change these cells. You can use dropdowns if available.
-- <span style={{ border: '1px solid #D9D9D9', padding: '4px', color: 'black', backgroundColor: '#D9D9D9' }}>Gray</span>: Input area. Copy and paste stock info from the Stock List Sheets to here.
+- <span style={{ border: '1px solid #D9D9D9', padding: '4px', color: 'black', backgroundColor: '#D9D9D9' }}>Gray</span>: Input area. Copy and paste *stock identifiers* from the Stock List Sheets to here.
 - <span style={{ border: '1px solid #D9D9D9', padding: '4px', color: 'black', backgroundColor: '#FFE599' }}>Yellow</span> or 
   <span style={{ border: '1px solid #D9D9D9', padding: '4px', color: 'black', backgroundColor: '#B6D7A8' }}>Green</span>: Output area. Your analysis results will show up here.
 - <span style={{ border: '1px solid #D9D9D9', padding: '4px', color: 'black', backgroundColor: 'white' }}>White</span>: Empty space. Feel free to use it however you like.
