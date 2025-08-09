@@ -39,3 +39,8 @@
   background: #F1C232;
   color: black;
 }
+
+/* for math expression: 중복 렌더링 방지 */
+.katex-html[aria-hidden="true"] {
+  display: none;
+}

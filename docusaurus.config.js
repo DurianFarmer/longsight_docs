@@ -5,6 +5,8 @@
 // See: https://docusaurus.io/docs/api/docusaurus-config
 
 import {themes as prismThemes} from 'prism-react-renderer';
+const math = require('remark-math'); // for math expressions
+const katex = require('rehype-katex'); // for math expressions
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
@@ -51,6 +53,8 @@ const config = {
           // editUrl:
             // 'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
           breadcrumbs: false, // Remove navigation to the main page
+          remarkPlugins: [require('remark-math')], // for math expressions
+          rehypePlugins: [require('rehype-katex')], // for math expressions
         },
         blog: {
           showReadingTime: true,
@@ -73,7 +77,15 @@ const config = {
       }),
     ],
   ],
-
+  stylesheets: [ // for math expressions
+    {
+      href: 'https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css',
+      type: 'text/css',
+      integrity:
+        'sha384-mll67QQYjIG6bJm+blin1pzzBn09V+gpWs2x3/eZ20F3yFzXqU3w4f4CfTE4ENaF',
+      crossorigin: 'anonymous',
+    },
+  ],
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({

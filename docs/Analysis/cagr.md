@@ -18,9 +18,9 @@ sidebar_position: 1
 
 ## Cell Guide
 - <span style={{ border: '1px solid #D9D9D9', padding: '4px', color: 'black', backgroundColor: '#D9D9D9' }}>Gray</span>: Enter the *stock identifiers* here.
+- <span style={{ border: '1px solid #D9D9D9', padding: '4px', color: 'white', backgroundColor: '#274E13' }}>Dropdowns ▾</span> (`E5`–`H5`): Select the time periods you want to analyze.
 - <span style={{ border: '1px solid #D9D9D9', padding: '4px', color: 'black', backgroundColor: '#FFE599' }}>Yellow</span>: Displays today's price and historical prices from past years near the same date. If today is not a trading day, the most recent available data is shown.
 - <span style={{ border: '1px solid #D9D9D9', padding: '4px', color: 'black', backgroundColor: '#B6D7A8' }}>Green</span>: Shows the CAGR from each past year to the present.
-- <span style={{ border: '1px solid #D9D9D9', padding: '4px', color: 'white', backgroundColor: '#274E13' }}>Dropdowns ▾</span> (`E5`–`H5`): Select the time periods you want to analyze.
 
 ---
 
